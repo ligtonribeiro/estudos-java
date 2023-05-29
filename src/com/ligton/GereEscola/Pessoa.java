@@ -8,4 +8,9 @@ public class Pessoa {
         this.nacionalidade = nacionalidade;
         this.naturalidade = naturalidade;
     }
+
+    public String toString() {
+        return "Objeto:" + "\n\t- Classe: " + getClass().getName() + "\n\t- Hash: " + Integer.toHexString(hashCode())
+                + "\n\t- Nome: " + nome + "\n\t- Naturalidade: " + naturalidade;
+    }
 }
